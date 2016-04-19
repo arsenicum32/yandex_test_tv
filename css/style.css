@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: Gill Sans;
+}
+.header {
+  height: 10vh;
+  width: 100vw;
+  background: #f33;
+  margin: 0;
+  overflow: hidden;
+}
+.header .chanels {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .chanels img {
+  height: 8vh;
+  margin: auto;
+  margin-top: 1vh;
+}
+.header .label {
+  width: 50%;
+  height: 80%;
+  margin: 10%;
+  display: none;
+}
+.header .label .imgl {
+  width: 100%;
+  height: 50%;
+  background: url("../public/1.png") no-repeat left center;
+  background-size: contain;
+}
+.header .label .name {
+  font-size: 1.2em;
+  width: 50%;
+  min-width: 100px;
+  background: #eee;
+}
+.header .label .tizer {
+  margin: 0;
+  font-size: 0.4em;
+}
+.footer {
+  width: 100vw;
+  height: 100px;
+  margin-top: 20px;
+  background: #333;
+}
+.body {
+  width: 100vw;
+}
+.body .timeline {
+  margin: 0;
+  padding: 0;
+}
+.body .descblock {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 0;
+  width: 100%;
+  border-top: 8px solid #ff0;
+  border-bottom: 8px solid #ff0;
+}
+.body .descblock div {
+  margin: 5%;
+}
+.body .descblock .imgpered {
+  width: 30%;
+  height: 300px;
+  background: url("http://placekitten.com/500/800") no-repeat center center;
+  background-size: contain;
+}
+.body .descblock .desc {
+  width: 50%;
+}
+.body .descblock .desc p {
+  width: 80%;
+  margin: auto;
+}
+.body .descblock .desc .big {
+  font-size: 1.6em;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 1.2em;
+}
+.body .descblock .desc .desc {
+  width: 80%;
+  margin: auto;
+}
+.body .descblock .desc .time {
+  margin-bottom: 0.5em;
+}
+.body .descblock .desc .time .o {
+  padding-right: 5px;
+  background: #ff0;
+}
+.body .descblock .desc .time .t {
+  padding-right: 5px;
+  color: #fff;
+  background: #00f;
+}
+@media screen and (orientation: portrait) {
+  .header {
+    height: 40vh;
+  }
+  .header .label {
+    display: block;
+  }
+  .header .chanels {
+    display: none;
+  }
+  .body .descblock .imgpered {
+    width: 100%;
+  }
+  .body .descblock .desc {
+    width: 100%;
+  }
+}
+@media all and (orientation: landscape) and (min-width: 620px) {
+  .body .descblock {
+    width: 600px;
+    margin: auto;
+    border: 8px solid #ff0;
+  }
+}

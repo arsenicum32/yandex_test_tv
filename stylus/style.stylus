@@ -1,0 +1,103 @@
+body
+  margin 0
+  font-family Gill Sans
+.header
+  height 10vh
+  width 100vw
+  background rgb(255,51,51)
+  margin 0
+  overflow hidden
+  .chanels
+    display flex
+    align-items center
+    img
+      height 8vh
+      margin auto
+      margin-top 1vh
+  .label
+    width 50%
+    height 80%
+    margin 10%
+    display none
+    .imgl
+      width 100%
+      height 50%
+      background url('http://placehold.it/100x100?text=1') no-repeat left center
+      background-size contain
+    .name
+      font-size 1.2em
+      width 50%
+      min-width 100px
+      background #eee
+    .tizer
+      margin 0
+      font-size 0.4em
+.footer
+  width 100vw
+  height 100px
+  margin-top 20px
+  background #333
+.body
+  width 100vw
+  .timeline
+    margin 0
+    padding 0
+  .descblock
+    display flex
+    flex-wrap wrap
+    margin 0
+    width 100%
+    border-top 8px solid yellow
+    border-bottom 8px solid yellow
+    div
+      margin 5%
+    .imgpered
+      width 30%
+      height 300px
+      background url('http://placekitten.com/500/800') no-repeat center center
+      background-size contain
+    .desc
+      width 50%
+      p
+        width 80%
+        margin auto
+      .big
+        font-size 1.6em
+        width 80%
+        margin auto
+        margin-bottom 1.2em
+      .desc
+        width 80%
+        margin auto
+      .time
+        margin-bottom 0.5em
+        .o
+          padding-right 5px
+          background yellow
+        .t
+          padding-right 5px
+          color white
+          background invert(yellow)
+        
+@media screen and (orientation: portrait)
+  .header
+    height 40vh
+    .label
+      display block
+    .chanels
+      display none
+  .body
+    .descblock
+      .imgpered
+        width 100%
+      .desc 
+        width 100%
+      
+        
+@media all and (orientation: landscape) and (min-width: 620px)
+  .body
+    .descblock
+      width 600px
+      margin auto
+      border 8px solid yellow
+    
